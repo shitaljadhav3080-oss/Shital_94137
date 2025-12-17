@@ -1,0 +1,104 @@
+21:52:07 **** Incremental Build of configuration Debug for project assignn3Q4.c ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "assignn3Q4.c.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\ARM  CONTROLLER\Shital_94137\assignment 3\assignn3Q4.c\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="assignn3Q4.c.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: assignn3Q4.c.elf
+ 
+arm-none-eabi-size  assignn3Q4.c.elf 
+arm-none-eabi-objdump -h -S assignn3Q4.c.elf  > "assignn3Q4.c.list"
+   text	   data	    bss	    dec	    hex	filename
+   1048	      4	   1564	   2616	    a38	assignn3Q4.c.elf
+Finished building: default.size.stdout
+ 
+Finished building: assignn3Q4.c.list
+ 
+21:52:13 **** Incremental Build of configuration Debug for project assignn3Q4.c ****
+make -j8 all 
+arm-none-eabi-size  assignn3Q4.c.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1048	      4	   1564	   2616	    a38	assignn3Q4.c.elf
+Finished building: default.size.stdout
+ 
+22:07:06 **** Build of configuration Debug for project assign3Q6.c ****
+make -j8 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f407vgtx.d" -MT"Startup/startup_stm32f407vgtx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32f407vgtx.o" "../Startup/startup_stm32f407vgtx.s"
+arm-none-eabi-gcc "../Src/itm.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/itm.d" -MT"Src/itm.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/itm.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc "../Src/system_stm32f4xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/system_stm32f4xx.d" -MT"Src/system_stm32f4xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/system_stm32f4xx.o"
+../Src/main.c:27:4: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+   27 |   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+      |    ^~~~~~~
+arm-none-eabi-gcc -o "assign3Q6.c.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\ARM  CONTROLLER\Shital_94137\assignment 3\assign3Q6.c\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="assign3Q6.c.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: assign3Q6.c.elf
+ 
+arm-none-eabi-size  assign3Q6.c.elf 
+arm-none-eabi-objdump -h -S assign3Q6.c.elf  > "assign3Q6.c.list"
+   text	   data	    bss	    dec	    hex	filename
+   1008	      4	   1564	   2576	    a10	assign3Q6.c.elf
+Finished building: default.size.stdout
+ 
+Finished building: assign3Q6.c.list
+ 
+22:07:28 **** Incremental Build of configuration Debug for project assign3Q6.c ****
+make -j8 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f407vgtx.d" -MT"Startup/startup_stm32f407vgtx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f407vgtx.o" "../Startup/startup_stm32f407vgtx.s"
+arm-none-eabi-gcc "../Src/itm.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/itm.d" -MT"Src/itm.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/itm.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc "../Src/system_stm32f4xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/system_stm32f4xx.d" -MT"Src/system_stm32f4xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/system_stm32f4xx.o"
+arm-none-eabi-gcc -o "assign3Q6.c.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\ARM  CONTROLLER\Shital_94137\assignment 3\assign3Q6.c\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="assign3Q6.c.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: assign3Q6.c.elf
+ 
+arm-none-eabi-size  assign3Q6.c.elf 
+arm-none-eabi-objdump -h -S assign3Q6.c.elf  > "assign3Q6.c.list"
+   text	   data	    bss	    dec	    hex	filename
+    984	      4	   1564	   2552	    9f8	assign3Q6.c.elf
+Finished building: default.size.stdout
+ 
+Finished building: assign3Q6.c.list
+ 
+22:07:39 **** Incremental Build of configuration Debug for project assign3Q6.c ****
+make -j8 all 
+arm-none-eabi-size  assign3Q6.c.elf 
+   text	   data	    bss	    dec	    hex	filename
+    984	      4	   1564	   2552	    9f8	assign3Q6.c.elf
+Finished building: default.size.stdout
+ 
+22:07:46 **** Incremental Build of configuration Debug for project assign3Q6.c ****
+make -j8 all 
+arm-none-eabi-size  assign3Q6.c.elf 
+   text	   data	    bss	    dec	    hex	filename
+    984	      4	   1564	   2552	    9f8	assign3Q6.c.elf
+Finished building: default.size.stdout
+ 
+22:07:55 **** Incremental Build of configuration Debug for project assign3Q6.c ****
+make -j8 all 
+arm-none-eabi-size  assign3Q6.c.elf 
+   text	   data	    bss	    dec	    hex	filename
+    984	      4	   1564	   2552	    9f8	assign3Q6.c.elf
+Finished building: default.size.stdout
+ 
+22:08:35 **** Incremental Build of configuration Debug for project assign3Q6.c ****
+make -j8 all 
+arm-none-eabi-size  assign3Q6.c.elf 
+   text	   data	    bss	    dec	    hex	filename
+    984	      4	   1564	   2552	    9f8	assign3Q6.c.elf
+Finished building: default.size.stdout
+ 
+22:10:14 **** Incremental Build of configuration Debug for project assign3Q6.c ****
+make -j8 all 
+arm-none-eabi-size  assign3Q6.c.elf 
+   text	   data	    bss	    dec	    hex	filename
+    984	      4	   1564	   2552	    9f8	assign3Q6.c.elf
+Finished building: default.size.stdout
+ 
+22:10:28 **** Incremental Build of configuration Debug for project assign3Q6.c ****
+make -j8 all 
+arm-none-eabi-size  assign3Q6.c.elf 
+   text	   data	    bss	    dec	    hex	filename
+    984	      4	   1564	   2552	    9f8	assign3Q6.c.elf
+Finished building: default.size.stdout
+ 

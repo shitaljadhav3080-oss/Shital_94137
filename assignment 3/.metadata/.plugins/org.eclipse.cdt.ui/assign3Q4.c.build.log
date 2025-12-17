@@ -1,0 +1,10 @@
+21:24:39 **** Incremental Build of configuration Debug for project assign3Q4.c ****
+make -j8 all 
+arm-none-eabi-size  assign3Q4.c.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1048	      4	   1564	   2616	    a38	assign3Q4.c.elf
+Finished building: default.size.stdout
+ 
+
+21:24:39 Build Finished. 0 errors, 0 warnings. (took 148ms)
+
