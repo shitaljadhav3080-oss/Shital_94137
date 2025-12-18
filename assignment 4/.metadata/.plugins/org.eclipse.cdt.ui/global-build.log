@@ -1,0 +1,28 @@
+21:35:27 **** Incremental Build of configuration Debug for project A3Q3.c ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/my_led.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/my_led.d" -MT"Src/my_led.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/my_led.o"
+arm-none-eabi-gcc -o "A3Q3.c.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\ARM  CONTROLLER\Shital_94137\assignment 4\A3Q3.c\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="A3Q3.c.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: A3Q3.c.elf
+ 
+arm-none-eabi-size  A3Q3.c.elf 
+arm-none-eabi-objdump -h -S A3Q3.c.elf  > "A3Q3.c.list"
+   text	   data	    bss	    dec	    hex	filename
+   1236	      4	   1564	   2804	    af4	A3Q3.c.elf
+Finished building: default.size.stdout
+ 
+Finished building: A3Q3.c.list
+ 
+21:35:31 **** Incremental Build of configuration Debug for project A3Q3.c ****
+make -j8 all 
+arm-none-eabi-size  A3Q3.c.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1236	      4	   1564	   2804	    af4	A3Q3.c.elf
+Finished building: default.size.stdout
+ 
+21:35:37 **** Incremental Build of configuration Debug for project A3Q3.c ****
+make -j8 all 
+arm-none-eabi-size  A3Q3.c.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1236	      4	   1564	   2804	    af4	A3Q3.c.elf
+Finished building: default.size.stdout
+ 
