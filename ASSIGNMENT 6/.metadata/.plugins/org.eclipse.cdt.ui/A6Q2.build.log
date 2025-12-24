@@ -1,0 +1,10 @@
+19:54:56 **** Incremental Build of configuration Debug for project A6Q2 ****
+make -j8 all 
+arm-none-eabi-size  A6Q2.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6108	     12	   1572	   7692	   1e0c	A6Q2.elf
+Finished building: default.size.stdout
+ 
+
+19:54:57 Build Finished. 0 errors, 0 warnings. (took 637ms)
+

@@ -1,0 +1,17 @@
+08:46:04 **** Incremental Build of configuration Debug for project A6Q1 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "A6Q1.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\ARM  CONTROLLER\Shital_94137\ASSIGNMENT 6\A6Q1\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="A6Q1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: A6Q1.elf
+ 
+arm-none-eabi-size  A6Q1.elf 
+arm-none-eabi-objdump -h -S A6Q1.elf  > "A6Q1.list"
+   text	   data	    bss	    dec	    hex	filename
+   6024	     12	   1572	   7608	   1db8	A6Q1.elf
+Finished building: default.size.stdout
+ 
+Finished building: A6Q1.list
+ 
+
+08:46:04 Build Finished. 0 errors, 0 warnings. (took 915ms)
+
