@@ -1,0 +1,10 @@
+01:19:10 **** Incremental Build of configuration Debug for project assig9Q4 ****
+make -j8 all 
+arm-none-eabi-size  assig9Q4.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12332	     92	   1996	  14420	   3854	assig9Q4.elf
+Finished building: default.size.stdout
+ 
+
+01:19:11 Build Finished. 0 errors, 0 warnings. (took 304ms)
+

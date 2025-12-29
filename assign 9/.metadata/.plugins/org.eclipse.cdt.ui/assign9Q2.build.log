@@ -1,0 +1,164 @@
+00:44:19 **** Incremental Build of configuration Debug for project assign9Q2 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main - Copy.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main - Copy.d" -MT"Core/Src/main - Copy.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main - Copy.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/my_lcd.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/my_lcd.d" -MT"Core/Src/my_lcd.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/my_lcd.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_it.d" -MT"Core/Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_it.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32f4xx - Copy.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/system_stm32f4xx - Copy.d" -MT"Core/Src/system_stm32f4xx - Copy.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/system_stm32f4xx - Copy.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32f4xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/system_stm32f4xx.d" -MT"Core/Src/system_stm32f4xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/system_stm32f4xx.o"
+In file included from ../Core/Src/main - Copy.c:21:
+../Core/Inc/my_lcd.h:32:23: error: unknown type name 'I2C_HandleTypeDef'; did you mean 'DMA_HandleTypeDef'?
+   32 | bool lcd16x2_i2c_init(I2C_HandleTypeDef *pI2cHandle);
+      |                       ^~~~~~~~~~~~~~~~~
+      |                       DMA_HandleTypeDef
+In file included from ../Core/Src/main.c:21:
+../Core/Inc/my_lcd.h:32:23: error: unknown type name 'I2C_HandleTypeDef'; did you mean 'DMA_HandleTypeDef'?
+   32 | bool lcd16x2_i2c_init(I2C_HandleTypeDef *pI2cHandle);
+      |                       ^~~~~~~~~~~~~~~~~
+      |                       DMA_HandleTypeDef
+In file included from ../Core/Src/my_lcd.c:14:
+../Core/Inc/my_lcd.h:32:23: error: unknown type name 'I2C_HandleTypeDef'; did you mean 'DMA_HandleTypeDef'?
+   32 | bool lcd16x2_i2c_init(I2C_HandleTypeDef *pI2cHandle);
+      |                       ^~~~~~~~~~~~~~~~~
+      |                       DMA_HandleTypeDef
+../Core/Src/main.c:44:1: error: unknown type name 'I2C_HandleTypeDef'; did you mean 'DMA_HandleTypeDef'?
+   44 | I2C_HandleTypeDef hi2c1;
+      | ^~~~~~~~~~~~~~~~~
+      | DMA_HandleTypeDef
+../Core/Src/main - Copy.c:44:1: error: unknown type name 'I2C_HandleTypeDef'; did you mean 'DMA_HandleTypeDef'?
+   44 | I2C_HandleTypeDef hi2c1;
+      | ^~~~~~~~~~~~~~~~~
+      | DMA_HandleTypeDef
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:96:8: warning: implicit declaration of function 'lcd16x2_i2c_init'; did you mean 'lcd16x2_i2c_printf'? [-Wimplicit-function-declaration]
+   96 |   if (!lcd16x2_i2c_init(&hi2c1))
+      |        ^~~~~~~~~~~~~~~~
+      |        lcd16x2_i2c_printf
+../Core/Src/main.c: In function 'MX_I2C1_Init':
+../Core/Src/main.c:179:8: error: request for member 'Instance' in something not a structure or union
+  179 |   hi2c1.Instance = I2C1;
+      |        ^
+../Core/Src/main.c:180:8: error: request for member 'Init' in something not a structure or union
+  180 |   hi2c1.Init.ClockSpeed = 100000;
+      |        ^
+../Core/Src/main.c:181:8: error: request for member 'Init' in something not a structure or union
+  181 |   hi2c1.Init.DutyCycle = I2C_DUTYCYCLE_2;
+      |        ^
+../Core/Src/main - Copy.c: In function 'main':
+../Core/Src/main - Copy.c:96:8: warning: implicit declaration of function 'lcd16x2_i2c_init'; did you mean 'lcd16x2_i2c_printf'? [-Wimplicit-function-declaration]
+   96 |   if (!lcd16x2_i2c_init(&hi2c1))
+      |        ^~~~~~~~~~~~~~~~
+      |        lcd16x2_i2c_printf
+../Core/Src/main - Copy.c: In function 'MX_I2C1_Init':
+../Core/Src/main - Copy.c:177:8: error: request for member 'Instance' in something not a structure or union
+  177 |   hi2c1.Instance = I2C1;
+      |        ^
+../Core/Src/main - Copy.c:178:8: error: request for member 'Init' in something not a structure or union
+  178 |   hi2c1.Init.ClockSpeed = 100000;
+      |        ^
+../Core/Src/main - Copy.c:179:8: error: request for member 'Init' in something not a structure or union
+  179 |   hi2c1.Init.DutyCycle = I2C_DUTYCYCLE_2;
+      |        ^
+../Core/Src/main.c:181:26: error: 'I2C_DUTYCYCLE_2' undeclared (first use in this function)
+  181 |   hi2c1.Init.DutyCycle = I2C_DUTYCYCLE_2;
+      |                          ^~~~~~~~~~~~~~~
+../Core/Src/main.c:181:26: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:182:8: error: request for member 'Init' in something not a structure or union
+  182 |   hi2c1.Init.OwnAddress1 = 0;
+      |        ^
+../Core/Src/main.c:183:8: error: request for member 'Init' in something not a structure or union
+  183 |   hi2c1.Init.AddressingMode = I2C_ADDRESSINGMODE_7BIT;
+      |        ^
+../Core/Src/my_lcd.c:29:1: error: unknown type name 'I2C_HandleTypeDef'; did you mean 'DMA_HandleTypeDef'?
+   29 | I2C_HandleTypeDef* lcd16x2_i2cHandle = NULL;
+      | ^~~~~~~~~~~~~~~~~
+      | DMA_HandleTypeDef
+../Core/Src/main - Copy.c:179:26: error: 'I2C_DUTYCYCLE_2' undeclared (first use in this function)
+  179 |   hi2c1.Init.DutyCycle = I2C_DUTYCYCLE_2;
+      |                          ^~~~~~~~~~~~~~~
+../Core/Src/main - Copy.c:179:26: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main - Copy.c:180:8: error: request for member 'Init' in something not a structure or union
+  180 |   hi2c1.Init.OwnAddress1 = 0;
+      |        ^
+../Core/Src/main - Copy.c:181:8: error: request for member 'Init' in something not a structure or union
+  181 |   hi2c1.Init.AddressingMode = I2C_ADDRESSINGMODE_7BIT;
+      |        ^
+../Core/Src/main.c:183:31: error: 'I2C_ADDRESSINGMODE_7BIT' undeclared (first use in this function)
+  183 |   hi2c1.Init.AddressingMode = I2C_ADDRESSINGMODE_7BIT;
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:184:8: error: request for member 'Init' in something not a structure or union
+  184 |   hi2c1.Init.DualAddressMode = I2C_DUALADDRESS_DISABLE;
+      |        ^
+../Core/Src/my_lcd.c: In function 'lcd_i2c_send_nibble':
+../Core/Src/my_lcd.c:54:12: warning: implicit declaration of function 'HAL_I2C_Master_Transmit' [-Wimplicit-function-declaration]
+   54 |     return HAL_I2C_Master_Transmit(lcd16x2_i2cHandle,LCD_I2C_SLAVE_ADDRESS,i2cData, 2,  200);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main - Copy.c:181:31: error: 'I2C_ADDRESSINGMODE_7BIT' undeclared (first use in this function)
+  181 |   hi2c1.Init.AddressingMode = I2C_ADDRESSINGMODE_7BIT;
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main - Copy.c:182:8: error: request for member 'Init' in something not a structure or union
+  182 |   hi2c1.Init.DualAddressMode = I2C_DUALADDRESS_DISABLE;
+      |        ^
+../Core/Src/my_lcd.c: At top level:
+../Core/Src/my_lcd.c:126:23: error: unknown type name 'I2C_HandleTypeDef'; did you mean 'DMA_HandleTypeDef'?
+  126 | bool lcd16x2_i2c_init(I2C_HandleTypeDef *pI2cHandle)
+      |                       ^~~~~~~~~~~~~~~~~
+      |                       DMA_HandleTypeDef
+../Core/Src/main.c:184:32: error: 'I2C_DUALADDRESS_DISABLE' undeclared (first use in this function); did you mean 'I2C_DUALADDRESS_DISABLED'?
+  184 |   hi2c1.Init.DualAddressMode = I2C_DUALADDRESS_DISABLE;
+      |                                ^~~~~~~~~~~~~~~~~~~~~~~
+      |                                I2C_DUALADDRESS_DISABLED
+../Core/Src/main.c:185:8: error: request for member 'Init' in something not a structure or union
+  185 |   hi2c1.Init.OwnAddress2 = 0;
+      |        ^
+../Core/Src/main.c:186:8: error: request for member 'Init' in something not a structure or union
+  186 |   hi2c1.Init.GeneralCallMode = I2C_GENERALCALL_DISABLE;
+      |        ^
+make: *** [Core/Src/subdir.mk:45: Core/Src/my_lcd.o] Error 1
+make: *** Waiting for unfinished jobs....
+../Core/Src/main - Copy.c:182:32: error: 'I2C_DUALADDRESS_DISABLE' undeclared (first use in this function); did you mean 'I2C_DUALADDRESS_DISABLED'?
+  182 |   hi2c1.Init.DualAddressMode = I2C_DUALADDRESS_DISABLE;
+      |                                ^~~~~~~~~~~~~~~~~~~~~~~
+      |                                I2C_DUALADDRESS_DISABLED
+../Core/Src/main - Copy.c:183:8: error: request for member 'Init' in something not a structure or union
+  183 |   hi2c1.Init.OwnAddress2 = 0;
+      |        ^
+../Core/Src/main - Copy.c:184:8: error: request for member 'Init' in something not a structure or union
+  184 |   hi2c1.Init.GeneralCallMode = I2C_GENERALCALL_DISABLE;
+      |        ^
+../Core/Src/main.c:186:32: error: 'I2C_GENERALCALL_DISABLE' undeclared (first use in this function); did you mean 'I2C_GENERALCALL_DISABLED'?
+  186 |   hi2c1.Init.GeneralCallMode = I2C_GENERALCALL_DISABLE;
+      |                                ^~~~~~~~~~~~~~~~~~~~~~~
+      |                                I2C_GENERALCALL_DISABLED
+../Core/Src/main.c:187:8: error: request for member 'Init' in something not a structure or union
+  187 |   hi2c1.Init.NoStretchMode = I2C_NOSTRETCH_DISABLE;
+      |        ^
+../Core/Src/main - Copy.c:184:32: error: 'I2C_GENERALCALL_DISABLE' undeclared (first use in this function); did you mean 'I2C_GENERALCALL_DISABLED'?
+  184 |   hi2c1.Init.GeneralCallMode = I2C_GENERALCALL_DISABLE;
+      |                                ^~~~~~~~~~~~~~~~~~~~~~~
+      |                                I2C_GENERALCALL_DISABLED
+../Core/Src/main - Copy.c:185:8: error: request for member 'Init' in something not a structure or union
+  185 |   hi2c1.Init.NoStretchMode = I2C_NOSTRETCH_DISABLE;
+      |        ^
+../Core/Src/main.c:187:30: error: 'I2C_NOSTRETCH_DISABLE' undeclared (first use in this function); did you mean 'I2C_NOSTRETCH_DISABLED'?
+  187 |   hi2c1.Init.NoStretchMode = I2C_NOSTRETCH_DISABLE;
+      |                              ^~~~~~~~~~~~~~~~~~~~~
+      |                              I2C_NOSTRETCH_DISABLED
+../Core/Src/main.c:188:7: warning: implicit declaration of function 'HAL_I2C_Init'; did you mean 'HAL_DMA_Init'? [-Wimplicit-function-declaration]
+  188 |   if (HAL_I2C_Init(&hi2c1) != HAL_OK)
+      |       ^~~~~~~~~~~~
+      |       HAL_DMA_Init
+make: *** [Core/Src/subdir.mk:45: Core/Src/main.o] Error 1
+../Core/Src/main - Copy.c:185:30: error: 'I2C_NOSTRETCH_DISABLE' undeclared (first use in this function); did you mean 'I2C_NOSTRETCH_DISABLED'?
+  185 |   hi2c1.Init.NoStretchMode = I2C_NOSTRETCH_DISABLE;
+      |                              ^~~~~~~~~~~~~~~~~~~~~
+      |                              I2C_NOSTRETCH_DISABLED
+../Core/Src/main - Copy.c:186:7: warning: implicit declaration of function 'HAL_I2C_Init'; did you mean 'HAL_DMA_Init'? [-Wimplicit-function-declaration]
+  186 |   if (HAL_I2C_Init(&hi2c1) != HAL_OK)
+      |       ^~~~~~~~~~~~
+      |       HAL_DMA_Init
+make: *** [Core/Src/subdir.mk:43: Core/Src/main - Copy.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+
+00:44:20 Build Failed. 39 errors, 5 warnings. (took 705ms)
+
