@@ -1,0 +1,2 @@
+../Core/Src/mq2.c:19:6:MX_ADC1_Init	24	static
+../Core/Src/mq2.c:65:10:read_adc	8	static
