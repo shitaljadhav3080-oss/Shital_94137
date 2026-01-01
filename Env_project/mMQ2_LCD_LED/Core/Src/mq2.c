@@ -14,6 +14,7 @@
 
 /* STM32 HAL library */
 #include "stm32f4xx_hal.h"
+uint32_t adc_value ;
 ADC_HandleTypeDef hadc1;
 
 void MX_ADC1_Init(void)
@@ -66,8 +67,8 @@ uint16_t read_adc()
 {
 	HAL_ADC_Start(&hadc1);
 	HAL_ADC_PollForConversion(&hadc1, HAL_MAX_DELAY);
-	//adc_value = HAL_ADC_GetValue(&hadc1);
+	adc_value = HAL_ADC_GetValue(&hadc1);
 	HAL_ADC_Stop(&hadc1);
 
-	return  HAL_ADC_GetValue(&hadc1);
+	return  adc_value;
 }

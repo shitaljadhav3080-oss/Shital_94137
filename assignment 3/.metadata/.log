@@ -911,3 +911,25 @@ java.lang.NullPointerException: Cannot read the array length because "containers
 
 !ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2025-12-16 22:10:35.636
 !MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 16000000; div: 8
+!SESSION 2025-12-17 01:22:48.023 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  C:\ARM  CONTROLLER\Shital_94137\assignment 3\assign3Q1\.cproject
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 C:\ARM  CONTROLLER\Shital_94137\assignment 3\assign3Q1\.cproject
+
+!ENTRY org.eclipse.core.resources 2 10035 2025-12-17 01:23:14.141
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-12-17 01:23:45.955
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-12-17 01:23:45.956
+!MESSAGE Log4j2 initialized with config file C:\ARM  CONTROLLER\Shital_94137\assignment 3\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-12-17 01:23:54.274
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-12-17 01:23:57.189
+!MESSAGE Indexed 'assign3Q1' (5 sources, 64 headers) in 2.18 sec: 3,425 declarations; 5,711 references; 1 unresolved inclusions; 1 syntax errors; 6 unresolved names (0.066%)
